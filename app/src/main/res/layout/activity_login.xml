@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient1"
+    android:orientation="vertical"
+    tools:context=".activities.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/logosmk"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/logosmk" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="ABSENSI SISWA"
+                        android:textColor="@color/white"
+                        android:textSize="35sp"
+                        android:textStyle="bold|italic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginRight="18dp"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:theme="@style/EditTextHint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edt_loginusername"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Username"
+                            android:inputType="textEmailAddress"
+                            android:textColorHint="@color/white"
+                            android:textColor="@color/white" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:theme="@style/EditTextHint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+
+                            android:id="@+id/edt_loginpassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:textColorHint="@color/white"
+                            android:textColor="@color/white" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:visibility="invisible"
+                        android:id="@+id/tv_forgot_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="end"
+                        android:text="Forgot the password?"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <Button
+                android:id="@+id/btn_login"
+                android:layout_margin="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kotak_tumpul"
+                android:padding="6dp"
+                android:text="SIGN IN"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="22sp" />
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/linearlogin"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="18dp"-->
+                    <!--android:layout_marginTop="25dp"-->
+                    <!--android:layout_marginRight="18dp"-->
+                    <!--android:background="@drawable/kotak_tumpul"-->
+                    <!--android:clickable="true"-->
+                    <!--android:focusable="true"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<Button-->
+                        <!--android:id="@+id/btn_login"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@color/blue"-->
+                        <!--android:onClick="userLogin"-->
+                        <!--android:padding="6dp"-->
+                        <!--android:text="SIGN IN"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:textSize="22sp" />-->
+
+                <!--</RelativeLayout>-->
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
